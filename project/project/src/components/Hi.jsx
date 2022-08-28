@@ -2,13 +2,10 @@ import React from "react";
 
 class Hi extends React.Component {
   render() {
-    const title = this.props.title;
-    const text = this.props.text;
+    const { text, title } = this.props;
 
-    {
-      if (text === undefined || title === undefined) {
-        return null;
-      }
+    if (text === undefined || title === undefined) {
+      return null;
     }
 
     return (
